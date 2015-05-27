@@ -1,0 +1,111 @@
+/*
+ * Import nib
+ */
+@import 'nib'
+
+/*
+ * Grab a custom font from Google
+ */
+@import url('http://fonts.googleapis.com/css?family=Quicksand')
+
+/*
+ * Nib provides a CSS reset
+ */
+global-reset()
+
+/*
+ * Store the main color and
+ * background color as variables
+ */
+
+main-color = #FF6699
+
+background-color = #faf9f0
+
+body
+
+  font-family 'Georgia'
+  background-image: url("http://imagesci.com/img/2013/04/music-notes-wallpaper-9635-hd-wallpapers.jpg")
+  background-size: 100% auto
+  color #444
+
+header
+  background: rgba(255, 204, 204, 0.10)
+  font-family 'Quicksand'
+  padding 50px 10px
+  color #FFCCCC
+  font-size 25px
+  text-align center
+
+  /*
+   * Note the use of the `main-color`
+   * variable and the `darken` function
+   */
+  text-shadow 0px -1px 0px darken(main-color, 30%)
+
+.container
+  width 500px
+  margin 50px auto
+  overflow hidden
+
+.main-content
+  width 600px
+  p
+    margin-bottom 20px
+  form
+    font-family 'Quicksand'
+    font-size 20px
+    margin auto
+    padding 10px
+    color #FFCCCC
+    text-shadow 0px -1px 0px darken(#A30042, 30%)
+    input
+      display inline
+      margin-right 100px
+      float right
+      background transparent
+      border !important
+      border 2px solid #FFCCCC
+      border-radius 5px
+      margin-bottom 30px
+      height 20px
+      width 200px
+      font-family 'Quicksand'
+      color #FFCCCC
+      &:focus
+        background: rgba(255, 204, 204, 0.30)
+        outline 0px
+      input.placeholder
+        color #FFCCCC
+    input#button
+      float left
+      font-size 20px
+      margin-left 150px
+      height 30px
+      padding-left 10px
+      padding-right 10px
+      background transparent
+      border !important
+      overflow hidden
+      border-radius 5px
+      border 2px solid #FFCCCC
+      color #FFCCCC
+      font-family 'Quicksand'
+      &:hover
+        background: rgba(255, 204, 204, 0.30)
+      &:focus
+        outline 0px
+  audio
+    display block
+    margin-left 100px
+
+.sidebar
+  float left
+  width 200px
+
+footer
+  width 500px
+  margin 50px auto
+  border-top 1px dotted #ccc
+  padding-top 5px
+  font-size 13px

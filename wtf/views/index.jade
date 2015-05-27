@@ -1,0 +1,28 @@
+extend layout
+block content
+  form(action= '/stocks',method='post')
+    div(id='mp3',data-role='fieldcontain')
+      fieldset(data-role='controlgroup')
+        label(for= 'mp3') Enter mp3 
+          input(id='mp3',type='text',value='',placeholder='E.g. URL.mp3',name='mp3')
+    div(id='numShapes',data-role='fieldcontain')
+      fieldset(data-role='controlgroup')
+        label(for= 'numShapes') Number of shapes 
+          input(id='numShapes',type='text',value='',placeholder='E.g. 4',name='numShapes')
+    div(id='song',data-role='fieldcontain')
+      fieldset(data-role='controlgroup')
+        label(for= 'song') Song title 
+          input(id='song',type='text',placeholder='Nico Nico Nii!',name='song')
+    div(id='button',data-role='fieldcontain')
+      input(id='button',onclick='loadAudio()',type='submit',value='Nico!')
+  .audio-player
+    h2(id='title') No Brand Girls
+      audio#audio-player(src='http://archive.forunesia.com/downloads/lovelive/S1/[Forunesia]%20No%20brand%20girls.mp3', type='audio/mp3', controls='controls')
+
+
+
+
+
+block sidebar
+
+    

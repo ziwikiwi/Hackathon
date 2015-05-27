@@ -1,0 +1,26 @@
+doctype
+html
+  head
+    title #{title} - My Site
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script.
+      function loadAudio(){
+
+      var mp3 = document.getElementById(mp3);
+      var shapes = document.getElementById(numShapes);
+      var title = document.getElementById(song);
+      if(mp3!="" )
+      document.getElementById(audioplayer).src = mp3;
+      document.getElementById(title) = title;
+      location.reload();}
+  body
+    header
+      h1 Nico Nico Nii!
+    .container
+      .main-content
+        block content
+      .sidebar
+        block sidebar
+    footer
+      p Running on node with Express, Jade and Stylus
+  
